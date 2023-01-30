@@ -1,12 +1,15 @@
 ---
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Recipe from "../components/Recipe.astro";
+import Search from "../components/Search.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Chef AI">
-  <div class="flex flex-col items-center justify-center h-[100vh]">
+  <div class="flex flex-col items-center justify-center h-[90vh]">
     <Header />
-    <Recipe />
+    <Search />
   </div>
 </Layout>
+<Footer/>
