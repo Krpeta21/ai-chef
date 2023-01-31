@@ -1,15 +1,25 @@
 <script>
   import { searchARecipe } from "../../services/chefIA.js";
+  import RecipeCard from "../Recipe/RecipeCard.svelte";
   let promise = null;
+  let state = false
+  let value
+  let text
   const handleClick = async () => {
-    const text = document.getElementById("recipeInput").value;
+    text = document.getElementById("recipeInput").value;
     promise = searchARecipe(text);
-    const value = await promise
-    console.log(value)   
+    value = await promise   
     promise = null
-  };
+    state = true
+  } 
 </script>
-
+<div class="flex flex-row mb-5">
+<input
+id='recipeInput'
+class="appearance-none border-2 border-blue-500 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+type="text"
+placeholder="Find a recipe..."
+/>
 {#if promise === null}
   <button
     on:click={handleClick}
@@ -42,6 +52,10 @@
       />
     </svg>
     Loading...
-  </button>           
+  </button>   
     {/await}
+{/if}
+</div>
+{#if state === true}
+  <RecipeCard food={text} recipe={value}/>
 {/if}

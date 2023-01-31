@@ -1,12 +1,10 @@
 <script>
-  export let state;
   export let food;
-  export let recipe;
+  export let recipe;  
 </script>
 
-{#if state === true}
-<div class="flex flex-col gap-10 w-full border border-cyan-700 rounded-sm h-fit">
-  <p>The recipe for {food} is:</p>
+
+<div class="flex flex-col gap-10 border-2 border-blue-500 rounded-lg p-5 h-fit bg-white">
+  <p>The recipe for <strong>{food}</strong> is:</p>
   <p>{recipe}</p>
 </div>
-{/if}

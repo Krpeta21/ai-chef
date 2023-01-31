@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
-import SearchComponent from "../components/Search/SearchComponent.svelte";
+
+import SubmitForm from "../components/Submit/SubmitForm.svelte";
 
 import Layout from "../layouts/Layout.astro";
 ---
@@ -8,7 +9,8 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Chef AI">
   <div class="flex flex-col items-center justify-center h-[90vh]">
     <Header />
-    <SearchComponent client:visible/>
+    <div class="flex flex-col w-[20%]">
+      <SubmitForm client:visible />
+    </div>
   </div>
 </Layout>
-
