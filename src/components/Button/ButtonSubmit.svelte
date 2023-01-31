@@ -5,7 +5,7 @@
     const text = document.getElementById("recipeInput").value;
     promise = searchARecipe(text);
     const value = await promise
-    console.log(value)
+    console.log(value)   
     promise = null
   };
 </script>
@@ -20,7 +20,6 @@
     {#await promise}
     <button
     class="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 rounded cursor-not-allowed flex flex-col items-center"
-    disabled=""
   >
     <svg
       class="w-5 h-5 mr-3 -ml-1 text-white animate-spin"
@@ -43,6 +42,6 @@
       />
     </svg>
     Loading...
-  </button>
+  </button>           
     {/await}
 {/if}

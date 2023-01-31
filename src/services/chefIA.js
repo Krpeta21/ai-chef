@@ -50,5 +50,5 @@ Ingredients:
         body: JSON.stringify(data)
     }).then(res => res.json())
     const {text} = response.generations[0]
-    return text.replace('--','').trim().substring(1,text.length-1)
+    return text.replace('--','').trim().substring(1,text.length-1)     
 }
