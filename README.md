@@ -19,3 +19,10 @@ Chef AI: https://chefai.netlify.app/
 
 - [@Krpeta21](https://github.com/Krpeta21)
 
+
+## Technologies used
+
+**Client:** Svelte, Astro, Javascript, TailwindCSS.
+
+**Server:** [co:here](https://cohere.ai/) AI.
+
