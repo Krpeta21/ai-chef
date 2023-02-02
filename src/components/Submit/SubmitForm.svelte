@@ -19,7 +19,7 @@
 id='recipeInput'
 class="appearance-none border-2 border-blue-500 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
 type="text"
-placeholder="Find a recipe..."
+placeholder="Generate a recipe..."
 />
 {#if promise === null}
   <button
