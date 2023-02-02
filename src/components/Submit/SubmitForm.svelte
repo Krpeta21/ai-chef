@@ -6,6 +6,7 @@
   let value
   let text
   const handleClick = async () => {
+    state = false
     text = document.getElementById("recipeInput").value;
     promise = searchARecipe(text);
     value = await promise   
