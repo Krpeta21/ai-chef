@@ -11,7 +11,7 @@
   <ul>
     <p class="text-2xl font-bold text-blue-500">Ingredients:</p>
     {#each recipeS as ingredient}
-      <li class="px-5 py-1">{ingredient}</li>    
+      <li class="px-5 py-1">{ingredient}.</li>    
     {/each}    
   </ul>
 </article>
