@@ -2,7 +2,7 @@
 # CHEF AI
 
 A web application, powered by AI technology to bring you the best and most diverse recipe options for every occasion and taste preference.
-
+midudev-cohere-2023
 
 ## Demo
 
